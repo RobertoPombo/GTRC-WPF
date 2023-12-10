@@ -6,7 +6,7 @@
         <Setter Property="Width" Value="Auto"/>
         <Setter Property="Height" Value="25"/>
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
         <Setter Property="Padding" Value="3,5"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -29,7 +29,7 @@
                         <Canvas Width="10" Height="20" Background="Transparent">
                             <Path Name="Circle"
                                   Data="M5,5 a 5,5 0 0 1 0,10 a 5,5 0 0 1 0,-10"
-                                  Stroke="{StaticResource color2}" StrokeThickness="1"
+                                  Stroke="{DynamicResource color2}" StrokeThickness="1"
                                   Fill="{Binding Path=Foreground, RelativeSource={RelativeSource AncestorType={x:Type Label}}}"/>
                         </Canvas>
                     </Border>
@@ -45,8 +45,8 @@
 
         <Setter Property="Width" Value="Auto"/>
         <Setter Property="Height" Value="Auto"/>
-        <Setter Property="Background" Value="{StaticResource color7}"/>
-        <Setter Property="Foreground" Value="{StaticResource color1}"/>
+        <Setter Property="Background" Value="{DynamicResource color7}"/>
+        <Setter Property="Foreground" Value="{DynamicResource color1}"/>
         <Setter Property="FontSize" Value="10"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Padding" Value="10,2,10,1"/>

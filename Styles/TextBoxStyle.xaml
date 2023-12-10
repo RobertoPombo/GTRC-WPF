@@ -15,10 +15,10 @@
         </Setter>
 
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource color2}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource color2}"/>
         <Setter Property="Padding" Value="5"/>
-        <Setter Property="SelectionBrush" Value="{StaticResource color1}"/>
+        <Setter Property="SelectionBrush" Value="{DynamicResource color1}"/>
         <Setter Property="Height" Value="25"/>
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -27,7 +27,7 @@
         <Style.Triggers>
 
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource color3}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource color3}"/>
             </Trigger>
 
         </Style.Triggers>
@@ -55,7 +55,7 @@
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="5"/>
         <Setter Property="Padding" Value="0"/>
-        <Setter Property="SelectionBrush" Value="{StaticResource color1}"/>
+        <Setter Property="SelectionBrush" Value="{DynamicResource color1}"/>
 
     </Style>
 
@@ -74,15 +74,15 @@
 
         <Setter Property="FontSize" Value="10"/>
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource color2}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource color2}"/>
         <Setter Property="Padding" Value="5"/>
-        <Setter Property="SelectionBrush" Value="{StaticResource color1}"/>
+        <Setter Property="SelectionBrush" Value="{DynamicResource color1}"/>
 
         <Style.Triggers>
 
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource color3}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource color3}"/>
             </Trigger>
 
         </Style.Triggers>
@@ -103,11 +103,11 @@
         </Setter>
 
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource color2}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource color2}"/>
         <Setter Property="Height" Value="22"/>
         <Setter Property="Padding" Value="5"/>
-        <Setter Property="SelectionBrush" Value="{StaticResource color1}"/>
+        <Setter Property="SelectionBrush" Value="{DynamicResource color1}"/>
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
@@ -115,8 +115,8 @@
         <Style.Triggers>
 
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{StaticResource color3}"/>
-                <Setter Property="Foreground" Value="{StaticResource color1}"/>
+                <Setter Property="Background" Value="{DynamicResource color3}"/>
+                <Setter Property="Foreground" Value="{DynamicResource color1}"/>
             </Trigger>
 
         </Style.Triggers>
