@@ -14,7 +14,7 @@
             </Setter.Value>
         </Setter>
 
-        <Setter Property="Background" Value="{StaticResource color1}"/>
+        <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="{StaticResource color2}"/>
         <Setter Property="BorderBrush" Value="{StaticResource color2}"/>
         <Setter Property="Padding" Value="5"/>
@@ -73,7 +73,7 @@
         </Setter>
 
         <Setter Property="FontSize" Value="10"/>
-        <Setter Property="Background" Value="{StaticResource color1}"/>
+        <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="{StaticResource color2}"/>
         <Setter Property="BorderBrush" Value="{StaticResource color2}"/>
         <Setter Property="Padding" Value="5"/>
@@ -102,7 +102,7 @@
             </Setter.Value>
         </Setter>
 
-        <Setter Property="Background" Value="{StaticResource color1}"/>
+        <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="{StaticResource color2}"/>
         <Setter Property="BorderBrush" Value="{StaticResource color2}"/>
         <Setter Property="Height" Value="22"/>
