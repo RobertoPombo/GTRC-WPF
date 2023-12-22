@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTRC_WPF", "GTRC_WPF.csproj", "{C54415E2-BFAD-45DC-8F6E-4367DAB485D0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTRC_Basics", "..\GTRC Basics\GTRC_Basics.csproj", "{BC42895D-BE26-4D82-9BB1-B7664C99100B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTRC_Basics", "..\GTRC-Basics\GTRC_Basics.csproj", "{9855CD25-3760-4544-9FC6-436CAC4970D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C54415E2-BFAD-45DC-8F6E-4367DAB485D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C54415E2-BFAD-45DC-8F6E-4367DAB485D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C54415E2-BFAD-45DC-8F6E-4367DAB485D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC42895D-BE26-4D82-9BB1-B7664C99100B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC42895D-BE26-4D82-9BB1-B7664C99100B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC42895D-BE26-4D82-9BB1-B7664C99100B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC42895D-BE26-4D82-9BB1-B7664C99100B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9855CD25-3760-4544-9FC6-436CAC4970D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9855CD25-3760-4544-9FC6-436CAC4970D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9855CD25-3760-4544-9FC6-436CAC4970D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9855CD25-3760-4544-9FC6-436CAC4970D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
