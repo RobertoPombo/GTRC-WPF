@@ -89,7 +89,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GTRC Basics\GTRC_Basics.csproj" />
     <ProjectReference Include="..\GTRC-Basics\GTRC_Basics.csproj" />
   </ItemGroup>
 
