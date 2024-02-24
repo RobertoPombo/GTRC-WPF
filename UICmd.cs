@@ -2,15 +2,9 @@
 
 namespace GTRC_WPF
 {
-    public class UICmd : ICommand
+    public class UICmd(Action<object> execute) : ICommand
     {
         public event EventHandler? CanExecuteChanged;
-        readonly Action<object>? execute;
-
-        public UICmd(Action<object> _execute)
-        {
-            execute = _execute;
-        }
 
         public void Execute(object? parameter)
         {
