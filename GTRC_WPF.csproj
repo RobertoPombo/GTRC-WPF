@@ -56,6 +56,8 @@
     <None Remove="Icons\acc_weather_thunderstorm1.png" />
     <None Remove="Icons\acc_weather_thunderstorm2.png" />
     <None Remove="Icons\acc_weather_thunderstorm3.png" />
+    <None Remove="Icons\gt0.ico" />
+    <None Remove="Icons\gt1.ico" />
     <None Remove="Icons\icon.png" />
     <None Remove="Icons\icon_acc0.png" />
     <None Remove="Icons\icon_acc1.png" />
@@ -65,9 +67,10 @@
     <None Remove="Icons\icon_exp0.png" />
     <None Remove="Icons\icon_exp1.png" />
     <None Remove="Icons\icon_exp2.png" />
-    <None Remove="Icons\icon_gtrc.ico" />
-    <None Remove="Icons\icon_gtrc.png" />
-    <None Remove="Icons\icon_gtrc2.png" />
+    <None Remove="Icons\icon_gt0.png" />
+    <None Remove="Icons\icon_gt1.png" />
+    <None Remove="Icons\icon_gtrc0.png" />
+    <None Remove="Icons\icon_gtrc1.png" />
     <None Remove="Icons\icon_hid0.png" />
     <None Remove="Icons\icon_hid1.png" />
     <None Remove="Icons\icon_hid2.png" />
@@ -234,6 +237,12 @@
     <Resource Include="Icons\acc_weather_thunderstorm3.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Icons\gt0.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\gt1.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Icons\icon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -261,13 +270,16 @@
     <Resource Include="Icons\icon_exp2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Icons\icon_gtrc.ico">
+    <Resource Include="Icons\icon_gt0.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Icons\icon_gtrc.png">
+    <Resource Include="Icons\icon_gtrc0.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Icons\icon_gtrc2.png">
+    <Resource Include="Icons\icon_gtrc1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\icon_gt1.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\icon_hid0.png">
