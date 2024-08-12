@@ -18,4 +18,17 @@
         Run = 3,
         RunWait = 4
     }
+
+    public enum DiscordMessageType
+    {
+        PermanentInfo = 0,
+        Commands = 1,
+        Entries = 2,
+        NewEntries = 3,
+        EntriesIssues = 4,
+        Events = 5,
+        Cars = 6,
+        Rating = 7,
+        Organizations = 8
+    }
 }
