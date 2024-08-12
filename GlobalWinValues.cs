@@ -2,17 +2,22 @@
 using System.Windows;
 using System.Windows.Media;
 
+using GTRC_Basics;
+
 namespace GTRC_WPF
 {
     public static class GlobalWinValues
     {
         public static readonly double screenWidth = SystemParameters.PrimaryScreenWidth;
         public static readonly double screenHeight = SystemParameters.FullPrimaryScreenHeight + SystemParameters.WindowCaptionHeight;
-        public static Brush StateOff { get { return WpfColors.List[0]; } }
-        public static Brush StateOn { get { return WpfColors.List[3]; } }
-        public static Brush StateWait { get { return WpfColors.List[7]; } }
-        public static Brush StateRun { get { return WpfColors.List[6]; } }
-        public static Brush StateRunWait { get { return WpfColors.List[4]; } }
+        public static Dictionary<StateBackgroundWorker, Brush> ColorsStateBackgroundWorker = new()
+        {
+            { StateBackgroundWorker.Off, WpfColors.List[0] },
+            { StateBackgroundWorker.On, WpfColors.List[3] },
+            { StateBackgroundWorker.Wait, WpfColors.List[7] },
+            { StateBackgroundWorker.Run, WpfColors.List[6] },
+            { StateBackgroundWorker.RunWait, WpfColors.List[4] }
+        };
 
         public static void SetCultureInfo()
         {
@@ -37,6 +42,19 @@ namespace GTRC_WPF
             {
                 _window.Resources["color" + index.ToString()] = WpfColors.List[index];
             }
+            ColorsStateBackgroundWorker = new()
+            {
+                { StateBackgroundWorker.Off, WpfColors.List[0] },
+                { StateBackgroundWorker.On, WpfColors.List[3] },
+                { StateBackgroundWorker.Wait, WpfColors.List[7] },
+                { StateBackgroundWorker.Run, WpfColors.List[6] },
+                { StateBackgroundWorker.RunWait, WpfColors.List[4] }
+            };
+            OnStateBackgroundWorkerColorsUpdated();
         }
+
+        public static event Notify? StateBackgroundWorkerColorsUpdated;
+
+        public static void OnStateBackgroundWorkerColorsUpdated() { StateBackgroundWorkerColorsUpdated?.Invoke(); }
     }
 }
