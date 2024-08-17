@@ -26,9 +26,10 @@
         Entries = 2,
         NewEntries = 3,
         EntryConflicts = 4,
-        Events = 5,
-        Cars = 6,
-        Rating = 7,
-        Organizations = 8
+        BoP = 5,
+        Events = 6,
+        Cars = 7,
+        Organizations = 8,
+        Rating = 9
     }
 }
