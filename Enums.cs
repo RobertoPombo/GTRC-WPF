@@ -25,7 +25,7 @@
         Commands = 1,
         Entries = 2,
         NewEntries = 3,
-        EntriesIssues = 4,
+        EntryConflicts = 4,
         Events = 5,
         Cars = 6,
         Rating = 7,
