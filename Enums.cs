@@ -25,7 +25,7 @@
         Commands = 1,
         Entries = 2,
         NewEntries = 3,
-        EntryConflicts = 4,
+        SeasonSettingsViolations = 4,
         BoP = 5,
         Events = 6,
         Cars = 7,
