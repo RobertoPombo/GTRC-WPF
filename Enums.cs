@@ -18,18 +18,4 @@
         Run = 3,
         RunWait = 4
     }
-
-    public enum DiscordMessageType
-    {
-        PermanentInfo = 0,
-        Commands = 1,
-        Entries = 2,
-        NewEntries = 3,
-        SeasonSettingsViolations = 4,
-        BoP = 5,
-        Events = 6,
-        Cars = 7,
-        Organizations = 8,
-        Rating = 9
-    }
 }
