@@ -19,7 +19,7 @@
                         <Border 
                                 Name="Border" 
                                 Background="Transparent" 
-                                BorderBrush="{DynamicResource color3}" 
+                                BorderBrush="{DynamicResource colorDetail1}" 
                                 BorderThickness="1" 
                                 CornerRadius="3" >
                             <ContentPresenter ContentSource="SelectedContent" />
@@ -48,7 +48,7 @@
                         <Border 
                                 Name="Border" 
                                 Background="Transparent" 
-                                BorderBrush="{DynamicResource color3}" 
+                                BorderBrush="{DynamicResource colorDetail1}" 
                                 BorderThickness="0,1" 
                                 CornerRadius="0">
                             <ContentPresenter ContentSource="SelectedContent" />
@@ -79,12 +79,12 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Panel.ZIndex" Value="100"/>
-                            <Setter TargetName="TabItem" Property="BorderBrush" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="TabItem" Property="BorderBrush" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
                         <Trigger SourceName="TabItem" Property="IsMouseOver" Value="True">
-                            <Setter Property="Foreground" Value="{DynamicResource color1}"/>
-                            <Setter TargetName="TabItem" Property="Background" Value="{DynamicResource color3}"/>
-                            <Setter TargetName="TabItem" Property="BorderBrush" Value="{DynamicResource color3}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
+                            <Setter TargetName="TabItem" Property="Background" Value="{DynamicResource colorDetail1}"/>
+                            <Setter TargetName="TabItem" Property="BorderBrush" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -92,7 +92,7 @@
         </Setter>
 
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
 
     </Style>
 

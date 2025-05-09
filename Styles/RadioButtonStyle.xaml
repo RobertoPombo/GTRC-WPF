@@ -15,17 +15,17 @@
         </Setter>
 
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
 
         <Style.Triggers>
 
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource color3}"/>
-                <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                <Setter Property="Background" Value="{DynamicResource colorDetail1}"/>
+                <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type RadioButton}">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="2" BorderBrush="{DynamicResource color3}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="2" BorderBrush="{DynamicResource colorDetail1}">
                                 <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                             </Border>
                         </ControlTemplate>
@@ -37,7 +37,7 @@
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type RadioButton}">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="2" BorderBrush="{DynamicResource color3}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="2" BorderBrush="{DynamicResource colorDetail1}">
                                 <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                             </Border>
                         </ControlTemplate>
@@ -67,15 +67,15 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="False">
                             <Setter TargetName="border" Property="BorderBrush" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource color3}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource colorDetail1}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -105,17 +105,17 @@
                         <Trigger Property="IsChecked" Value="False">
                             <Setter TargetName="border" Property="BorderBrush" Value="Transparent"/>
                             <Setter TargetName="border" Property="Background" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color3}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="border" Property="Background" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color3}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource color3}"/>
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource colorDetail1}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

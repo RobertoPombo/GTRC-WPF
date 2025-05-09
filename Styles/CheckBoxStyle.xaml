@@ -18,28 +18,28 @@
                         <Canvas Width="25" Height="25" Background="Transparent">
                             <Path Name="Box"
                                   Data="M9,5 h7 a 4,4 0 0 1 4,4 v7 a 4,4 0 0 1 -4,4 h-7 a 4,4 0 0 1 -4,-4 v-7 a 4,4 0 0 1 4,-4"
-                                  Fill="Transparent" Stroke="{DynamicResource color2}" StrokeThickness="1"/>
+                                  Fill="Transparent" Stroke="{DynamicResource colorForeground}" StrokeThickness="1"/>
                             <Path Name="X" Visibility="Hidden"
                                   Data="M9,9 l 7 7 m0,-7 l -7 7"
-                                  Stroke="{DynamicResource color2}" StrokeThickness="2"/>
+                                  Stroke="{DynamicResource colorForeground}" StrokeThickness="2"/>
                             <Path Name="Check"
                                   Data="M8,13 l 3 3 l 6 -6"
-                                  Stroke="{DynamicResource color2}" StrokeThickness="2"/>
+                                  Stroke="{DynamicResource colorForeground}" StrokeThickness="2"/>
                         </Canvas>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="False">
-                            <Setter TargetName="Box" Property="Stroke" Value="{DynamicResource color2}"/>
+                            <Setter TargetName="Box" Property="Stroke" Value="{DynamicResource colorForeground}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="Box" Property="Stroke" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="Box" Property="Stroke" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="False">
                             <Setter TargetName="Check" Property="Visibility" Value="Hidden"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="Check" Property="Visibility" Value="Visible"/>
-                            <Setter TargetName="Box" Property="Fill" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="Box" Property="Fill" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -66,10 +66,10 @@
                         <Canvas Width="40" Height="25" Background="Transparent">
                             <Path Name="Rail"
                                   Data="M10,8 h20 a 5,5 0 0 1 0,10 h-20 a 5,5 0 0 1 0,-10"
-                                  Stroke="{DynamicResource color2}" StrokeThickness="1"/>
+                                  Stroke="{DynamicResource colorForeground}" StrokeThickness="1"/>
                             <Path Name="Slider"
                                   Data="M9,5 h7 a 4,4 0 0 1 4,4 v7 a 4,4 0 0 1 -4,4 h-7 a 4,4 0 0 1 -4,-4 v-7 a 4,4 0 0 1 4,-4"
-                                  Fill="{DynamicResource color2}" Stroke="{DynamicResource color2}" StrokeThickness="1"/>
+                                  Fill="{DynamicResource colorForeground}" Stroke="{DynamicResource colorForeground}" StrokeThickness="1"/>
                             <TextBlock Name="Text" FontSize="7"/>
                         </Canvas>
                     </Border>
@@ -78,14 +78,14 @@
                             <Setter TargetName="Rail" Property="Fill" Value="Transparent"/>
                             <Setter TargetName="Slider" Property="Margin" Value="0"/>
                             <Setter TargetName="Text" Property="Text" Value="off"/>
-                            <Setter TargetName="Text" Property="Foreground" Value="{DynamicResource color2}"/>
+                            <Setter TargetName="Text" Property="Foreground" Value="{DynamicResource colorForeground}"/>
                             <Setter TargetName="Text" Property="Margin" Value="22,10"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="Rail" Property="Fill" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="Rail" Property="Fill" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="Slider" Property="Margin" Value="15,0"/>
                             <Setter TargetName="Text" Property="Text" Value="on"/>
-                            <Setter TargetName="Text" Property="Foreground" Value="{DynamicResource color2}"/>
+                            <Setter TargetName="Text" Property="Foreground" Value="{DynamicResource colorForeground}"/>
                             <Setter TargetName="Text" Property="Margin" Value="9,10"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="False">

@@ -3,14 +3,14 @@
 
     <Style x:Key="DataGridStyle" TargetType="{x:Type DataGrid}" BasedOn="{StaticResource {x:Type DataGrid}}">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
         <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
         <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type DataGrid}">
-                    <Border Background="Transparent" BorderBrush="{DynamicResource color3}" BorderThickness="1" CornerRadius="7" SnapsToDevicePixels="True">
+                    <Border Background="Transparent" BorderBrush="{DynamicResource colorDetail1}" BorderThickness="1" CornerRadius="7" SnapsToDevicePixels="True">
                         <ScrollViewer x:Name="DG_ScrollViewer" Focusable="false" Background="Transparent">
                             <ScrollViewer.Template>
                                 <ControlTemplate TargetType="{x:Type ScrollViewer}">
@@ -90,12 +90,12 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="DataGridRow" Property="Background" Value="{DynamicResource color3}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="DataGridRow" Property="Background" Value="{DynamicResource colorDetail1}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter TargetName="DataGridRow" Property="Background" Value="{DynamicResource color4}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+                            <Setter TargetName="DataGridRow" Property="Background" Value="{DynamicResource colorDetail2}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -107,21 +107,21 @@
 
     <!--Style and template for the DataGridColumnHeader.-->
     <Style TargetType="{x:Type DataGridColumnHeader}">
-        <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+        <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
                     <Grid>
-                        <Border x:Name="ColumnHeader" Background="{DynamicResource color3}"
-                                BorderThickness="1,0,1,0" BorderBrush="{DynamicResource color3}" Padding="5,10" CornerRadius="5,5,0,0" Margin="2,2,2,1">
+                        <Border x:Name="ColumnHeader" Background="{DynamicResource colorDetail1}"
+                                BorderThickness="1,0,1,0" BorderBrush="{DynamicResource colorDetail1}" Padding="5,10" CornerRadius="5,5,0,0" Margin="2,2,2,1">
                             <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="ColumnHeader" Property="Background" Value="{DynamicResource color4}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource color2}"/>
-                            <Setter TargetName="ColumnHeader" Property="BorderBrush" Value="{DynamicResource color2}"/>
+                            <Setter TargetName="ColumnHeader" Property="Background" Value="{DynamicResource colorDetail2}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
+                            <Setter TargetName="ColumnHeader" Property="BorderBrush" Value="{DynamicResource colorForeground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

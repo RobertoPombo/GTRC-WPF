@@ -4,39 +4,20 @@ namespace GTRC_WPF
 {
     public static class WpfColors
     {
-        public static List<SolidColorBrush> List = [
-            Brushes.Transparent,
-            Brushes.Black,
-            Brushes.White,
-            Brushes.Gray,
-            Brushes.Red,
-            Brushes.Green,
-            Brushes.Blue,
-            Brushes.Yellow,
-            Brushes.Cyan,
-            Brushes.Violet,
-            Brushes.Orange,
-            Brushes.DarkCyan,
-            Brushes.Pink,
-            Brushes.Gold,
-            Brushes.Silver,
-            Brushes.Brown,
-            Brushes.Transparent,
-            Brushes.Black,
-            Brushes.White,
-            Brushes.Gray,
-            Brushes.Red,
-            Brushes.Green,
-            Brushes.Blue,
-            Brushes.Yellow,
-            Brushes.Cyan,
-            Brushes.Violet,
-            Brushes.Orange,
-            Brushes.DarkCyan,
-            Brushes.Pink,
-            Brushes.Gold,
-            Brushes.Silver,
-            Brushes.Brown
-            ];
+        public static Dictionary<string, SolidColorBrush> Dictionary = new()
+        {
+            { "Transparent", Brushes.Transparent },
+            { "Background", Brushes.Black },
+            { "Foreground", Brushes.White },
+            { "Detail1", Brushes.Gray },
+            { "Detail2", Brushes.Gray },
+            { "Detail3", Brushes.Gray },
+            { "On", Brushes.Green },
+            { "Off", Brushes.Red },
+            { "PersonalBest", Brushes.Green },
+            { "OverallBest", Brushes.Magenta },
+            { "Background2", Brushes.DarkGray },
+            { "Background3", Brushes.LightGray }
+        };
     }
 }

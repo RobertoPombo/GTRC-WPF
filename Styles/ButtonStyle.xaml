@@ -13,18 +13,18 @@
         </Setter>
 
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
 
         <Style.Triggers>
 
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource color3}"/>
-                <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                <Setter Property="Background" Value="{DynamicResource colorDetail1}"/>
+                <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
             </Trigger>
 
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="{DynamicResource color3}"/>
-                <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                <Setter Property="Background" Value="{DynamicResource colorDetail1}"/>
+                <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
                 <Setter Property="FontSize" Value="12"/>
                 <Setter Property="Template">
                     <Setter.Value>
@@ -48,7 +48,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="2" BorderThickness="1" BorderBrush="{DynamicResource color3}">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="2" BorderThickness="1" BorderBrush="{DynamicResource colorDetail1}">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
                     </Border>
                 </ControlTemplate>
@@ -56,19 +56,19 @@
         </Setter>
 
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{DynamicResource color3}"/>
+        <Setter Property="Foreground" Value="{DynamicResource colorDetail1}"/>
         <Setter Property="Margin" Value="2,5"/>
 
         <Style.Triggers>
 
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource color3}"/>
-                <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                <Setter Property="Background" Value="{DynamicResource colorDetail1}"/>
+                <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
             </Trigger>
 
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="{DynamicResource color1}"/>
-                <Setter Property="Foreground" Value="{DynamicResource color2}"/>
+                <Setter Property="Background" Value="{DynamicResource colorBackground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource colorForeground}"/>
             </Trigger>
 
         </Style.Triggers>
@@ -151,13 +151,13 @@
                         <Canvas Width="20" Height="20">
                             <Path Name="PathAdd"
                                   Data="M4,10 h12 M10,4 v12"
-                                  Stroke="{DynamicResource color2}"
+                                  Stroke="{DynamicResource colorForeground}"
                                   StrokeThickness="3"/>
                         </Canvas>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="PathAdd" Property="Stroke" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="PathAdd" Property="Stroke" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
 
                         <Trigger Property="IsPressed" Value="True">
@@ -186,13 +186,13 @@
                         <Canvas Width="20" Height="20">
                             <Path Name="PathDel"
                                   Data="M4,10 h12"
-                                  Stroke="{DynamicResource color2}"
+                                  Stroke="{DynamicResource colorForeground}"
                                   StrokeThickness="3"/>
                         </Canvas>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="PathDel" Property="Stroke" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="PathDel" Property="Stroke" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
 
                         <Trigger Property="IsPressed" Value="True">
@@ -217,13 +217,13 @@
                         <Canvas Width="25" Height="25">
                             <Path Name="PathCheck"
                                   Data="M5,13 l 5 5 l 10 -10"
-                                  Stroke="{DynamicResource color2}"
+                                  Stroke="{DynamicResource colorForeground}"
                                   StrokeThickness="3"/>
                         </Canvas>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="PathCheck" Property="Stroke" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="PathCheck" Property="Stroke" Value="{DynamicResource colorDetail1}"/>
                         </Trigger>
 
                         <Trigger Property="IsPressed" Value="True">
@@ -415,15 +415,15 @@
                             BorderThickness="0" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal">
                             <Image x:Name="icon" Source="pack://application:,,,/GTRC_WPF;component/Icons/icon_sav1.png" Stretch="Uniform" Margin="0,0,5,0"/>
-                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource color2}" Height="{TemplateBinding Height}"
+                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource colorForeground}" Height="{TemplateBinding Height}"
                                        Text="{Binding Path=Content, RelativeSource={RelativeSource AncestorType={x:Type Button}}}"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="icon" Property="Source" Value="pack://application:,,,/GTRC_WPF;component/Icons/icon_sav0.png"/>
-                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="text" Property="Margin" Value="0,0,0,-1"/>
@@ -445,15 +445,15 @@
                             BorderThickness="0" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal">
                             <Image x:Name="icon" Source="pack://application:,,,/GTRC_WPF;component/Icons/icon_res1.png" Stretch="Uniform" Margin="0,1,5,1"/>
-                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource color2}" Height="{TemplateBinding Height}"
+                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource colorForeground}" Height="{TemplateBinding Height}"
                                        Text="{Binding Path=Content, RelativeSource={RelativeSource AncestorType={x:Type Button}}}"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="icon" Property="Source" Value="pack://application:,,,/GTRC_WPF;component/Icons/icon_res0.png"/>
-                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="text" Property="Margin" Value="0,0,0,-1"/>
@@ -475,15 +475,15 @@
                             BorderThickness="0" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal">
                             <Image x:Name="icon" Source="pack://application:,,,/GTRC_WPF;component/Icons/icon_imp1.png" Stretch="Uniform" Margin="0,1,5,1"/>
-                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource color2}" Height="{TemplateBinding Height}"
+                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource colorForeground}" Height="{TemplateBinding Height}"
                                        Text="{Binding Path=Content, RelativeSource={RelativeSource AncestorType={x:Type Button}}}"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="icon" Property="Source" Value="pack://application:,,,/GTRC_WPF;component/Icons/icon_imp0.png"/>
-                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="text" Property="Margin" Value="0,0,0,-1"/>
@@ -505,15 +505,15 @@
                             BorderThickness="0" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal">
                             <Image x:Name="icon" Source="pack://application:,,,/GTRC_WPF;component/Icons/icon_exp1.png" Stretch="Uniform" Margin="0,1,5,1"/>
-                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource color2}" Height="{TemplateBinding Height}"
+                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource colorForeground}" Height="{TemplateBinding Height}"
                                        Text="{Binding Path=Content, RelativeSource={RelativeSource AncestorType={x:Type Button}}}"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="icon" Property="Source" Value="pack://application:,,,/GTRC_WPF;component/Icons/icon_exp0.png"/>
-                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="text" Property="Margin" Value="0,0,0,-1"/>
@@ -535,15 +535,15 @@
                             BorderThickness="0" BorderBrush="Transparent">
                         <StackPanel Orientation="Horizontal">
                             <Image x:Name="icon" Source="pack://application:,,,/GTRC_WPF;component/Icons/icon_bin1.png" Stretch="Uniform" Margin="0,-2,5,-2"/>
-                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource color2}" Height="{TemplateBinding Height}"
+                            <TextBlock x:Name="text" VerticalAlignment="Bottom" Foreground="{DynamicResource colorForeground}" Height="{TemplateBinding Height}"
                                        Text="{Binding Path=Content, RelativeSource={RelativeSource AncestorType={x:Type Button}}}"/>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{DynamicResource color3}"/>
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource colorDetail1}"/>
                             <Setter TargetName="icon" Property="Source" Value="pack://application:,,,/GTRC_WPF;component/Icons/icon_bin0.png"/>
-                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource color1}"/>
+                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource colorBackground}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="text" Property="Margin" Value="0,0,0,-1"/>

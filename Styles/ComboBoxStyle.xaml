@@ -8,7 +8,7 @@
                 <ColumnDefinition Width="20" />
             </Grid.ColumnDefinitions>
             <Border Grid.ColumnSpan="2" Name="Border"
-                    BorderBrush="{DynamicResource color2}"
+                    BorderBrush="{DynamicResource colorForeground}"
                     CornerRadius="5" BorderThickness="1"
                     Background="Transparent" />
             <Border Grid.Column="1" Margin="1" BorderBrush="Transparent" Name="ButtonBorder"
@@ -16,16 +16,16 @@
                     Background="Transparent"/>
             <Path Name="Arrow" Grid.Column="1"
                   Data="M0,0 L0,2 L4,6 L8,2 L8,0 L4,4 z"
-                  HorizontalAlignment="Center" Fill="{DynamicResource color2}"
+                  HorizontalAlignment="Center" Fill="{DynamicResource colorForeground}"
                   VerticalAlignment="Center" />
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="UIElement.IsMouseOver" Value="True">
-                <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="{DynamicResource color2}"/>
-                <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource color1}"/>
+                <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="{DynamicResource colorForeground}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource colorBackground}"/>
             </Trigger>
             <Trigger Property="ToggleButton.IsChecked" Value="True">
-                <Setter Property="Shape.Fill" TargetName="Arrow" Value="{DynamicResource color3}"/>
+                <Setter Property="Shape.Fill" TargetName="Arrow" Value="{DynamicResource colorDetail1}"/>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -45,8 +45,8 @@
 
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource color3}"/>
-                <Setter Property="Foreground" Value="{DynamicResource color1}"/>
+                <Setter Property="Background" Value="{DynamicResource colorDetail1}"/>
+                <Setter Property="Foreground" Value="{DynamicResource colorBackground}"/>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -57,7 +57,7 @@
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
-        <Setter Property="TextElement.Foreground" Value="{DynamicResource color2}"/>
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource colorForeground}"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Height" Value="25"/>
         <Setter Property="Control.Template">
@@ -85,9 +85,9 @@
                             <Grid Name="DropDown" SnapsToDevicePixels="True"
                                   MinWidth="{TemplateBinding FrameworkElement.ActualWidth}"
                                   MaxHeight="200">
-                                <Border Name="DropDownBorder" Background="{DynamicResource color1}" Margin="0, 5, 0, 0"
+                                <Border Name="DropDownBorder" Background="{DynamicResource colorBackground}" Margin="0, 5, 0, 0"
                                         CornerRadius="5" BorderThickness="1"
-                                        BorderBrush="{DynamicResource color2}"/>
+                                        BorderBrush="{DynamicResource colorForeground}"/>
                                 <ScrollViewer Margin="5,10,5,5" SnapsToDevicePixels="True">
                                     <ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained"/>
                                 </ScrollViewer>
